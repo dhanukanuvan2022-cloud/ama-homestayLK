@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ama HomeStay Guest Colombo – Rajagiriya</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><b>Ama HomeStay</b><nav><a href="#rooms">Rooms</a><a href="#gallery">Photos</a><a href="#book">Book</a><a href="#find">Find us</a></nav></header>
+
+<div class="hero">
+<img data-i="0" alt="Ama HomeStay at night with warm lit windows and a brick courtyard">
+<div class="w"><h1>A quiet green house in the middle of Colombo</h1>
+<p>Mango trees, a private courtyard and wooden rooms in Rajagiriya. Stay a few nights or a few months, with free parking, WiFi and bicycles.</p>
+<a class="btn" href="#book">Book on WhatsApp</a><a class="btn o" href="#rooms">See rooms and prices</a></div></div>
+
+<section id="rooms"><div class="w"><h2>Rooms and prices</h2>
+<p class="sub">Prices are per night, “from” rates for two guests. LKR amounts are approximate and follow the daily USD rate. The host confirms the final price on WhatsApp.</p>
+<div class="rooms" id="rl"></div></div></section>
+
+<section id="gallery" style="padding-top:0"><div class="w"><h2>Photos</h2><p class="sub">Tap a photo to enlarge it.</p><div class="gal" id="gl"></div></div></section>
+
+<section style="padding-top:0"><div class="w"><h2>What’s included</h2><ul class="am">
+<li>Free WiFi</li><li>Free private parking</li><li>Free bicycles</li><li>Air-conditioned rooms</li><li>Balcony and garden</li><li>Open-air bath</li>
+<li>Kitchen you can cook in</li><li>Shops and public transport nearby</li><li>Short or long stays</li><li>Host speaks English</li></ul>
+<p class="sub" style="margin-top:18px">Check-in 12:00 to 22:00. Check-out 05:00 to 11:00. Meals are not served, so cook in the kitchen or buy food from nearby shops.</p></div></section>
+
+<section id="book" style="padding-top:0"><div class="w"><h2>Book a room</h2>
+<p class="sub">Fill in your details and we open WhatsApp with your request ready to send. The host replies to confirm availability. Or ask our chat assistant, in Sinhala or English.</p>
+<form id="bf"><label>Your name<input id="n" required></label>
+<label>Room<select id="r"></select></label>
+<label>Check-in<input id="a" type="date" required></label>
+<label>Check-out<input id="b" type="date" required></label>
+<label>Guests<input id="g" type="number" min="1" max="8" value="2" required></label>
+<button class="btn" type="submit">Send booking request on WhatsApp</button></form></div></section>
+
+<section id="find" style="padding-top:0"><div class="w"><h2>Find us</h2>
+<p>382, Kalapaluwawa, Rajagiriya, Colombo, Sri Lanka<br>About 9 km from Bambalapitiya railway station and 10 km from Khan Clock Tower.</p>
+<p><a href="https://maps.app.goo.gl/DVaSBhaFCG96j4xWA" target="_blank" rel="noopener">Open in Google Maps</a></p></div></section>
+
+<footer><div class="w">Ama HomeStay Guest Colombo. Hosted by Kumar Karunanayaka.</div></footer>
+
+<button class="btn" id="cb" aria-label="Open chat assistant">Chat · සිංහල / English</button>
+<div id="cp" role="dialog" aria-label="Chat assistant"><div id="ch">Ama assistant</div><div id="ms"></div>
+<form id="cf" style="display:flex;border:0;border-top:1px solid var(--ln);border-radius:0;padding:10px"><input id="ci" placeholder="Ask in Sinhala or English" autocomplete="off"><button class="btn" type="submit">Send</button></form></div>
+<div id="lb"><img alt=""></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
